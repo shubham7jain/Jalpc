@@ -8,14 +8,10 @@
 
 ![Blog](readme_files/blog.gif)
 
-* [Ad](#ad)
-* [Getting Started](#getting-started)
-    * [Fork, then clone](#fork-then-clone)
-    * [Modify _config.yml](#modify-configyml)
+* [3 steps to setup this theme at your website!](#three-steps)
+* [Features](#features)
     * [Index page](#index-page)
-    * [Modify _data/\*.yml](#mofify-datayml)
-    * [Jekyll Serve](#jekyll-serve)
-    * [Using Github Pages](#using-github-pages)
+    * [_data/\*.yml](#mofify-datayml)
     * [Categories in blog page](#categories-in-blog-page)
     * [Pagination](#pagination)
     * [Page views counter](#page-views-counter)
@@ -26,139 +22,50 @@
     * [Search engines](#search-engines)
     * [Compress CSS and JS files](#compress-css-js)
     * [CNAME](#cname)
-    * [Put in a Jalpc Plug](#put-in-a-jalpc-plug)
-    * [Enjoy](#enjoy)
+* [Put in a Jalpc Plug](#put-in-a-jalpc-plug)
 * [Upgrading Jalpc](#upgrading-jalpc)
     * [Ensure there's an upstream remote](#ensure-theres-an-upstream-remote)
     * [Pull in the latest changes](#pull-in-the-latest-changes)
 * [Thanks to the following](#thanks-to-the-following)
 * [Contributing](#contributing)
+* [Ad](#ad)
 
 This is a simple, beautiful and swift theme for Jekyll. It's mobile first, fluidly responsive, and delightfully lightweight.
 
-It's pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.
-
-The landing page of the blog is multilingual page.
-
-It is my pleasure to contact me, you can give me your website or some advice about my website. Let's build a wonderful Jekyll theme together!
-
-## <a name="ad"></a>Ad
-
-[Jalpc-A](https://github.com/Jack614/Jalpc-A): another Jekyll theme written by [AngularJS](https://angularjs.org/).
-
-##  <a name="getting-started"></a>Getting Started
-
 If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by Smashing Magazine.
 
-### <a name="fork-then-clone"></a> Fork, then clone
+## <a name="three-steps"></a> 3 steps to setup this theme at your website!
 
-**Fork** the repo, and then **clone** it so you've got the code locally.
+Here is a [document](http://www.jack003.com/html/2017/01/19/3-steps-to-setup-website-with-Jalpc.html) of how to setup this theme with 3 steps.
 
-```
-$ git clone https://github.com/<your githubname>/jalpc_jekyll_theme.git
-$ cd jalpc_jekyll_theme
-$ gem install jekyll # If you don't have jekyll installed
-$ rm -rf _site && jekyll server
-```
-
-### <a name="modify-configyml"></a>Modify `_config.yml`
-
-The _config.yml located in the root of the jalpc_jekyll_theme directory contains all of the configuration details for the Jekyll site. The defaults are:
-
-``` yml
-# Website settings
-title: Jalpc
-description: Jack's blog,use Jekyll and github pages.
-keywords: 'Jack,Jalpc,blog,Jekyll,github,gh-pages'
-baseurl: ''
-url: 'http://www.jack003.com'
-# url: "http://127.0.0.1:4000"
-img_path: '/static/assets/img/blog'
-
-# author
-author:
-  name: 'Jack'
-  first_name: 'Kun'
-  last_name: 'Jia'
-  cv: 'http://cv.jack003.com'
-  email: 'me@jack003.com'
-  facebook_username: 'jiakunnj'
-  github_username: 'JiaKunUp'
-  avatar: '/static/img/landing/Jack.jpg'
-...
-```
+## <a name="feature"></a>Features
 
 ### <a name="#index-page"></a>Index page
 
 The index page is seprated into several sections and they are located in `_includes/sections`,the configuration is in `_data/landing.yml` and section's detail configuration is in `_data/*.yml`.
 
-#### <a name="mofify-datayml"></a>Modify `_data/*.yml`
+#### <a name="datayml"></a>`_data/*.yml`
 
 These files are used to dynamically render pages, so you almost don't have to edit *html files* to change your own theme, besides you can use `jekyll serve --watch` to reload changes.
 
-The following is mapping between *yml file* to *sections*.
+The following is mapping between *yml files* to *sections*.
 
 * landing.yml ==> index.html
-* language.yml ==> index.html
-* careers.yml  ==>  _includes/sections/career.html
-* skills.yml  ==>  _includes/sections/skills.html
-* projects.yml  ==>  _includes/sections/projects.html
-* links.yml  ==>  _includes/sections/links.html
+* index/language.yml ==> index.html
+* index/careers.yml  ==>  _includes/sections/career.html
+* index/skills.yml  ==>  _includes/sections/skills.html
+* index/projects.yml  ==>  _includes/sections/projects.html
+* index/links.yml  ==>  _includes/sections/links.html
 
 This *yml file* is about blog page navbar
 
 * blog.yml ==> _includes/header.html
 
-The following is mapping between *yml file* to *donation*
+The following is mapping between *yml files* to *donation*
 
-* donation.yml ==> blog/donate.html
-* alipay.yml  ==>  blog/donate.html
-* wechat_pay.yml ==> blog/donate.yml
-
-### <a name="jekyll-serve"></a>Jekyll Serve
-
-Then, start the Jekyll Server. I always like to give the --watch option so it updates the generated HTML when I make changes.
-
-```
-$ jekyll serve --watch
-```
-
-Now you can navigate to localhost:4000 in your browser to see the site.
-
-### <a name="using-github-pages"></a>Using Github Pages
-
-You can host your Jekyll site for free with Github Pages. Click [here](https://pages.github.com) for more information.
-
-A configuration tweak if you're using a gh-pages sub-folder
-
-In addition to your github-username.github.io repo that maps to the root url, you can serve up sites by using a gh-pages branch for other repos so they're available at github-username.github.io/repo-name.
-
-This will require you to modify the _config.yml like so:
-
-``` yml
-# Website settings
-title: Website Name
-description: Website description
-keywords: 'Website keywords'
-baseurl: '' # if you have suburl as homepage like '/homepage', please change it to '/homepage'
-url: 'https://github-username.github.io'
-# url: "http://127.0.0.1:4000"
-img_path: '/static/assets/img/blog'
-
-# author
-author:
-  name: 'Jack'
-  first_name: 'Kun'
-  last_name: 'Jia'
-  cv: 'http://cv.jack003.com'
-  email: 'me@jack003.com'
-  facebook_username: 'jiakunnj'
-  github_username: 'JiaKunUp'
-  avatar: '/static/img/landing/Jack.jpg'
-...
-```
-
-If you start server on localhost, you can turn on `# url: "http://127.0.0.1:4000"`.
+* donation/donationlist.yml ==> blog/donate.html
+* donation/alipay.yml  ==>  blog/donate.html
+* donation/wechat_pay.yml ==> blog/donate.yml
 
 ### <a name="categories-in-blog-page"></a>Categories in blog page
 
@@ -198,7 +105,7 @@ Many third party page counter platforms are too slow,so I count my website page 
 
 The landing page has multilingual support with the [i18next](http://i18next.com) plugin.
 
-Languages are configured in the `config.yml` file.
+Languages are configured in the `_data/index/language.yml` file.
 
 > If you don't need this feature, please clear content in file `_data/language.yml` and folder `static/locales/`.
 
@@ -263,17 +170,11 @@ $.i18n.init(
 
 ### <a name="web-analytics"></a>Web analytics
 
-I use [Baidu analytics](http://tongji.baidu.com/web/welcome/login), [Google analytics](https://www.google.com/analytics/) and [GrowingIO](https://www.growingio.com/) to do web analytics, you can choose either to realize it,just register a account and replace id in `_config.yml`.
+I use [Google analytics](https://www.google.com/analytics/) and [GrowingIO](https://www.growingio.com/) to do web analytics, you can choose either to realize it,just register a account and replace id in `_config.yml`.
 
 ### <a name="comment"></a>Comment
 
-I use [Changyan](http://changyan.kuaizhan.com/) and [Disqus](https://disqus.com/) to realize comment.
-
-#### Changyan
-To configure Changyan, get the appid and conf in <http://changyan.kuaizhan.com/>. Then, in `_config.yml`, edit the changyan value to enable Changyan.
-
-#### Disqus
-To configure Disqus,you should set disqus_shortname and get public key and then, in `_config.yml`, edit the disqus value to enable Disqus.
+I use [Disqus](https://disqus.com/) to realize comment. You should set disqus_shortname and get public key and then, in `_config.yml`, edit the disqus value to enable Disqus.
 
 ### <a name="share"></a>Share
 
@@ -314,15 +215,11 @@ I use [UglifyJS2](https://github.com/mishoo/UglifyJS2) and [clean-css](https://g
 
 ### <a name="cname"></a>CNAME
 
-Replace your website domain in **CNAME** file.
+With **CNAME** you can release weisite at your domain name.
 
-### <a name="put-in-a-jalpc-plug"></a>Put in a Jalpc Plug
+## <a name="put-in-a-jalpc-plug"></a>Put in a Jalpc Plug
 
 If you want to give credit to the Jalpc theme with a link to my personal website <http://www.jack003.com>, that'd be awesome. No worries if you don't.
-
-### <a name="enjoy"></a>Enjoy
-
-Hope you enjoy using Jalpc. If you encounter any issues, please feel free to let me know by creating an issue. I'd love to help.
 
 ## <a name="upgrading-jalpc"></a>Upgrading Jalpc
 
@@ -333,7 +230,7 @@ Jalpc is always being improved by its users, so sometimes one may need to upgrad
 If `git remote -v` doesn't have an upstream listed, you can do the following to add it:
 
 ```
-git remote add upstream https://github.com/Jack614/jalpc_jekyll_theme.git
+git remote add upstream https://github.com/JiaKunUp/jalpc_jekyll_theme.git
 ```
 
 ### <a name="pull-in-the-latest-changes"></a>Pull in the latest changes
@@ -362,3 +259,8 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## <a name="ad"></a>Ad
+
+[Jalpc-A](https://github.com/Jack614/Jalpc-A): another Jekyll theme written by [AngularJS](https://angularjs.org/).
+
