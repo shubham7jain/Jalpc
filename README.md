@@ -277,7 +277,7 @@ To configure Disqus,you should set disqus_shortname and get public key and then,
 
 ### <a name="share"></a>Share
 
-I use [bshare](http://www.bshare.cn/) to share my blog on other social network platform. You can register a count and get your share uuid.
+I use [AddToAny](https://www.addtoany.com/) to share my blog on other social network platform. You can go to this website to custom your share buttons and paste code at `_includes/share.html`.
 
 ### <a name="search-engines"></a>Search engines
 
