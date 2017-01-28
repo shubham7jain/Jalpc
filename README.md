@@ -180,6 +180,8 @@ I use [Disqus](https://disqus.com/) to realize comment. You should set disqus_sh
 
 I use [AddToAny](https://www.addtoany.com/) to share my blog on other social network platform. You can go to this website to custom your share buttons and paste code at `_includes/share.html`.
 
+![share](readme_files/share.png)
+
 ### <a name="search-engines"></a>Search engines
 
 I use javascript to realize blog search,you can double click `Ctrl` or click the icon at lower right corner of the page,the detail you can got to this repo: <https://github.com/androiddevelop/jekyll-search>.
