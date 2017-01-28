@@ -36,7 +36,7 @@ If you're completely new to Jekyll, I recommend checking out the documentation a
 
 ## <a name="three-steps"></a> 3 steps to setup this theme at your website!
 
-Here is a [document](http://www.jack003.com/html/2017/01/19/3-steps-to-setup-website-with-Jalpc.html) of how to setup this theme with 3 steps.
+Here is a [document](http://www.jack003.com/html/2017/01/28/3-steps-to-setup-website-with-Jalpc.html) of how to setup this theme with 3 steps.
 
 ## <a name="feature"></a>Features
 
