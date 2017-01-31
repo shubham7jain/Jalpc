@@ -99,7 +99,7 @@ The pagination in jekyll is not very perfect,so I use front-end web method,there
 
 ### <a name="page-views-counter"></a>Page views counter
 
-Many third party page counter platforms are too slow,so I count my website page view myself,the javascript file is [static/js/count.min.js](https://github.com/JiaKunUp/jalpc_jekyll_theme/blob/gh-pages/static/js/count.min.js) ([static/js/count.js](https://github.com/JiaKunUp/jalpc_jekyll_theme/blob/gh-pages/static/js/count.js)),the backend API is written with flask on [Vultr VPS](https://www.vultr.com/), detail code please see [jalpc-flask](https://github.com/JiaKunUp/jalpc-flask).
+Many third party page counter platforms are too slow,so I count my website page view myself,the javascript file is [static/js/count.min.js](https://github.com/jarrekk/jalpc_jekyll_theme/blob/gh-pages/static/js/count.min.js) ([static/js/count.js](https://github.com/jarrekk/jalpc_jekyll_theme/blob/gh-pages/static/js/count.js)),the backend API is written with flask on [Vultr VPS](https://www.vultr.com/), detail code please see [jalpc-flask](https://github.com/jarrekk/jalpc-flask).
 
 ### <a name="multilingual-page"></a>Multilingual Page
 
@@ -232,7 +232,7 @@ Jalpc is always being improved by its users, so sometimes one may need to upgrad
 If `git remote -v` doesn't have an upstream listed, you can do the following to add it:
 
 ```
-git remote add upstream https://github.com/JiaKunUp/jalpc_jekyll_theme.git
+git remote add upstream https://github.com/jarrekk/jalpc_jekyll_theme.git
 ```
 
 ### <a name="pull-in-the-latest-changes"></a>Pull in the latest changes
