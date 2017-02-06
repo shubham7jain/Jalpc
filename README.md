@@ -202,14 +202,14 @@ I use [UglifyJS2](https://github.com/mishoo/UglifyJS2) and [clean-css](https://g
   * **app-index-xxx.min.js**
   * **i18-xxx.min.js**
 
+  404 page are
+  * **fof-xxx.min.css**
+  * **fof-xxx.min.js**
+
   other pages are
   * **app-xxx.min.css**
   * **app-xxx.min.js**
   * **jPage-xxx.min.js**
-
-  404 page are
-  * **fof-xxx.min.css**
-  * **fof-xxx.min.js**
 
   **xxx** is date when you compress your files.
 3. If you want to add/remove CSS/JS files, just edit **build.js**, and run `npm run compress` at root dir of project.
