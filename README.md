@@ -12,6 +12,7 @@
 * [Features](#features)
     * [Index page](#index-page)
     * [_data/\*.yml](#mofify-datayml)
+    * [Chart Skills](#chart-skills)
     * [Categories in blog page](#categories-in-blog-page)
     * [Pagination](#pagination)
     * [Page views counter](#page-views-counter)
@@ -21,13 +22,13 @@
     * [Share](#share)
     * [Search engines](#search-engines)
     * [Compress CSS and JS files](#compress-css-js)
-    * [CNAME](#cname)
 * [Put in a Jalpc Plug](#put-in-a-jalpc-plug)
 * [Upgrading Jalpc](#upgrading-jalpc)
     * [Ensure there's an upstream remote](#ensure-theres-an-upstream-remote)
     * [Pull in the latest changes](#pull-in-the-latest-changes)
 * [Thanks to the following](#thanks-to-the-following)
 * [Contributing](#contributing)
+* [Change Log](#change-log)
 * [Ad](#ad)
 
 This is a simple, beautiful and swift theme for Jekyll. It's mobile first, fluidly responsive, and delightfully lightweight.
@@ -66,6 +67,10 @@ The following is mapping between *yml files* to *donation*
 * donation/donationlist.yml ==> blog/donate.html
 * donation/alipay.yml  ==>  blog/donate.html
 * donation/wechat_pay.yml ==> blog/donate.yml
+
+### <a name="chart-skills"></a>Chart Skills
+
+I use [Chart.js](http://www.chartjs.org/) to show skills, the type of skills' chart is radar, if you want to custom, please read document of Chart.js and edit **_includes/sections/skills.html** and **_data/index/skills.yml**.
 
 ### <a name="categories-in-blog-page"></a>Categories in blog page
 
@@ -212,12 +217,7 @@ I use [UglifyJS2](https://github.com/mishoo/UglifyJS2) and [clean-css](https://g
   * **jPage-xxx.min.js**
 
   **xxx** is date when you compress your files.
-3. If you want to add/remove CSS/JS files, just edit **build.js**, and run `npm run compress` at root dir of project.
-4. At last, edit `_includes/head.html` and `_includes/index_head.html` change CSS and JS files link to you generated just now.
-
-### <a name="cname"></a>CNAME
-
-With **CNAME** you can release weisite at your domain name.
+3. If you want to add/remove CSS/JS files, just edit **build.js**, and run `npm run build` at root dir of project, link/src files will use new files.
 
 ## <a name="put-in-a-jalpc-plug"></a>Put in a Jalpc Plug
 
@@ -254,6 +254,8 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 * [UglifyJS2](https://github.com/mishoo/UglifyJS2)
 * [clean-css](https://github.com/jakubpawlowicz/clean-css)
 * [Chart.js](http://www.chartjs.org/)
+* [shelljs](https://github.com/shelljs/shelljs)
+* [colors](https://github.com/marak/colors.js/)
 
 ## <a name="contributing"></a>Contributing
 
@@ -262,6 +264,36 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+##  <a name="change-log"></a>Change Log
+
+* v1.1.1
+  * display skills with Chart.js
+  * add shelljs and colors
+  * compress CSS/JS file with build.js automatically
+
+* v1.1.0
+  * Speed up!! reduce request times and file size
+  * change bower to npm
+  * compress CSS/JS files with uglifyjs and clean-css
+
+* v1.0.5
+  * add donation page
+  * fix basuurl and url bug
+
+* v1.0.4
+  * use **_data** to config index page
+  * separate index page by sections
+
+* v1.0.3
+  * change color
+  * remove unused css code
+
+* v1.0.2
+  * use jPages to realize pagination
+
+* v1.0.1
+  * first release
 
 ## <a name="ad"></a>Ad
 
