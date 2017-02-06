@@ -253,6 +253,7 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 * [androiddevelop](https://github.com/androiddevelop)
 * [UglifyJS2](https://github.com/mishoo/UglifyJS2)
 * [clean-css](https://github.com/jakubpawlowicz/clean-css)
+* [Chart.js](http://www.chartjs.org/)
 
 ## <a name="contributing"></a>Contributing
 
