@@ -244,7 +244,6 @@ git pull upstream gh-pages
 There may be merge conflicts, so be sure to fix the files that git lists if they occur. That's it!
 
 ## <a name="thanks-to-the-following"></a>Thanks to the following
-
 * [Jekyll](http://jekyllrb.com)
 * [Bootstrap](http://www.bootcss.com)
 * [jPages](http://luis-almeida.github.io/jPages)
@@ -258,7 +257,6 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 * [colors](https://github.com/marak/colors.js/)
 
 ## <a name="contributing"></a>Contributing
-
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
@@ -266,36 +264,28 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 5. Create new Pull Request
 
 ##  <a name="change-log"></a>Change Log
-
 * v1.1.1
   * display skills with Chart.js
   * add shelljs and colors
   * compress CSS/JS file with build.js automatically
-
 * v1.1.0
   * Speed up!! reduce request times and file size
   * change bower to npm
   * compress CSS/JS files with uglifyjs and clean-css
-
 * v1.0.5
   * add donation page
   * fix basuurl and url bug
-
 * v1.0.4
   * use **_data** to config index page
   * separate index page by sections
-
 * v1.0.3
   * change color
   * remove unused css code
-
 * v1.0.2
   * use jPages to realize pagination
-
 * v1.0.1
   * first release
 
 ## <a name="ad"></a>Ad
-
 [Jalpc-A](https://github.com/Jack614/Jalpc-A): another Jekyll theme written by [AngularJS](https://angularjs.org/).
 
