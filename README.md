@@ -28,6 +28,7 @@
     * [Pull in the latest changes](#pull-in-the-latest-changes)
 * [Thanks to the following](#thanks-to-the-following)
 * [Contributing](#contributing)
+* [Todo](#todo)
 * [Change Log](#change-log)
 * [Ad](#ad)
 
@@ -262,6 +263,9 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## <a name="todo"></a>Todo
+1. `jekyll server --watch` mode need to use original CSS/JS files
 
 ##  <a name="change-log"></a>Change Log
 * v1.1.1
