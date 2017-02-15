@@ -11,13 +11,13 @@ img_path: /Jalpc/static/assets/img/blog  # url should be changed to '/homepage/s
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
-  name: GitHub  # Be used at blog posts' author.
-  first_name: Hub  # Be used at index page about me section.
-  last_name: Git  # Be used at index page about me section.
-  cv: http://cv.jack003.com  # A online CV can be printed as PDF, leave blank if you don't have now
-  email: me@jack003.com  # Leave blank if you don't have now
-  facebook_username: jiakunnj  # Leave blank if you don't have now
-  github_username: jarrekk  # Leave blank if you don't have now
+  name: Shubham Jain  # Be used at blog posts' author.
+  first_name: Shubham  # Be used at index page about me section.
+  last_name: Jain  # Be used at index page about me section.
+  cv: http://people.tamu.edu/~shubham7jain/files/ShubhamJain.pdf  # A online CV can be printed as PDF, leave blank if you don't have now
+  email: shubham7jain@tamu.edu  # Leave blank if you don't have now
+  facebook_username: shubham7jain  # Leave blank if you don't have now
+  github_username: shubham7jain  # Leave blank if you don't have now
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
   skill_icon1:
     - name: icon-apache
@@ -25,12 +25,12 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: Introduce myself will be here.
+  desc: Computer Science Enthusiast • Music Lover • Hackathon Hacker • Graduate Student of Texas A & M University
 
 # comment
-disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  name: jalpc
-  public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
+# disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+#   name: jalpc
+#   public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
 
 # analytics
 ## google analytics
